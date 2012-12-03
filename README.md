@@ -1,3 +1,7 @@
+Currently this library only compiles under the Teeny 3.0 modified version
+of Arduino 1.0.2 provided by PJRC.com. See the PJRC forum for downloads
+http://forum.pjrc.com/forums/6-Announcements
+
 To install this library, place the folder containing all of the Solarlib
 files into the libraries directory in your Arduino folder (Mac) or 
 under the libraries folder inside arduino-1.0.2 (Windows).
