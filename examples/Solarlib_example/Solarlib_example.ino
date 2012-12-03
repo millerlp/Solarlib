@@ -1,5 +1,9 @@
 /* Solarlib_example
-  
+  **WARNING**
+  This will likely only work on 32-bit ARM based Arduino variants,
+  such as Teensy 3.0 and the Due, not on older 8-bit ATMEGA-based 
+  boards like the UNO or MEGA series.
+  **********
   This sketch illustrates the basic use of the Solarlib library.
   You must also have the Time library installed. 
   This sketch will output a series of values and times to the
@@ -9,7 +13,9 @@
   
   The solar calculator needs to be initialized using the 
   initSolarCalc() function found in the setup loop.
-
+  
+  The output can be checked against the NOAA calculator here:
+  http://www.esrl.noaa.gov/gmd/grad/solcalc/
 */
 
 #include <math.h>
