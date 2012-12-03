@@ -66,7 +66,7 @@ void loop() {
 
 
 // Utility function to print time and date nicely
-void printDateTime(time_t t){
+void printDateTime(atime_t t){
   Serial.print(year(t));
   printDateDigits(month(t));
   printDateDigits(day(t));
