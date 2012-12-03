@@ -1,3 +1,7 @@
+To install this library, place the folder containing all of the Solarlib
+files into the libraries directory in your Arduino folder (Mac) or 
+under the libraries folder inside arduino-1.0.2 (Windows).
+
 /* Solarlib		Luke Miller December 2012
  * Released into the public domain (originally based on U.S. Govt. products)
  * No warranty given or implied.
