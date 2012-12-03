@@ -28,7 +28,7 @@ getSunrise	KEYWORD2
 getSunriseTime	KEYWORD2
 getSunset	KEYWORD2
 getSunsetTime	KEYWORD2
-getSunlightDuration	KEYWORD2
+getSunDuration	KEYWORD2
 getTST	KEYWORD2
 getHA	KEYWORD2
 getSZA	KEYWORD2
