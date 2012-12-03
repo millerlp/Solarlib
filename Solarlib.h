@@ -158,7 +158,7 @@ double getSunset(atime_t t);
 // Extract Sunset as Time object (seconds since 1970-1-1, local time zone)
 atime_t getSunsetTime(atime_t t);
 // Extract Sunlight Duration (day length, minutes)
-double getSunlightDuration(atime_t t);
+double getSunDuration(atime_t t);
 // Extract True Solar Time (minutes)
 double getTST(atime_t t);
 // Extract Hour Angle (degrees)
