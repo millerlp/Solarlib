@@ -5,7 +5,8 @@
   boards like the UNO or MEGA series.
   **********
   This sketch illustrates the basic use of the Solarlib library.
-  You must also have the Time library installed. 
+  You must also have the Teensyduino-modified Time library installed. 
+  https://www.pjrc.com/teensy/td_download.html
   This sketch will output a series of values and times to the
   Serial monitor to demonstrate the usage of the solar 
   calculator. A full list of extractor functions can be found
@@ -19,8 +20,8 @@
 */
 
 #include <math.h>
-#include <Time.h>
-#include <Solarlib.h>
+#include "TimeLib.h"
+#include "Solarlib.h"
 
 // Time zone offset (hr), zones west of GMT are negative
 #define timeZoneOffset -8 
@@ -31,7 +32,7 @@
 // Longitude, values west of GMT are negative
 #define mylon -121.9 
 // Create time variable
-atime_t t; 
+time_t t; 
 
 void setup () {
     Serial.begin(115200); // Set serial port speed
@@ -66,7 +67,7 @@ void loop() {
 
 
 // Utility function to print time and date nicely
-void printDateTime(atime_t t){
+void printDateTime(time_t t){
   Serial.print(year(t));
   printDateDigits(month(t));
   printDateDigits(day(t));
