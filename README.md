@@ -1,5 +1,5 @@
 Currently this library only compiles under the Teensy modified version
-of Arduino provided by PJRC.com, and relies on the modified Time library
+of Arduino provided by PJRC.com (https://www.pjrc.com/teensy/td_download.html), and relies on the modified Time library
 that is packaged with the PJRC version of the Arduino software. See the PJRC 
 forum for downloads: 
 http://forum.pjrc.com/forums/6-Announcements
@@ -44,7 +44,7 @@ lets you specify:
 
  
  ## **WARNING**
- This has only tested on 32-bit ARM Teensy 3.0. This library will probably fail 
+ This has only tested on 32-bit ARM Teensy 3.0/3.1/3.5/3.6. This library will probably fail 
  horribly on 8-bit AVR products such as the Arduino Uno due to limits in precision 
  of double/float values. You can check your results against the NOAA calculator:
  http://www.esrl.noaa.gov/gmd/grad/solcalc/
