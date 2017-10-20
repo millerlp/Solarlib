@@ -74,176 +74,176 @@ double getlat(){
 double getlon(){
 	return SE.lon;
 }
-double gettimeFracDay(atime_t t){
+double gettimeFracDay(time_t t){
 	calcSolar(t, SE);
 	return SE.timeFracDay;
 }
-long getunixDays(atime_t t){
+long getunixDays(time_t t){
 	calcSolar(t, SE);
 	return SE.unixDays;
 }
-double getJDN(atime_t t){
+double getJDN(time_t t){
 	calcSolar(t, SE);
 	return SE.JDN;
 }
 // Extract Julian Century
-double getJCN(atime_t t){
+double getJCN(time_t t){
 	calcSolar(t, SE);
 	return SE.JCN;
 }
 // Extract GMLS
-double getGMLS(atime_t t){
+double getGMLS(time_t t){
 	calcSolar(t, SE);
 	return SE.GMLS;
 }
-double getGMAS(atime_t t){
+double getGMAS(time_t t){
 	calcSolar(t, SE);
 	return SE.GMAS;
 }
 // Extract Eccentricity of Earth Orbit
-double getEEO(atime_t t){
+double getEEO(time_t t){
 	calcSolar(t, SE);
 	return SE.EEO;
 }
 // Extract Sun Equation of Center
-double getSEC(atime_t t){
+double getSEC(time_t t){
 	calcSolar(t, SE);
 	return SE.SEC;
 }
 // Extract Sun True Longitude (degrees)  
-double getSTL(atime_t t){
+double getSTL(time_t t){
 	calcSolar(t, SE);
 	return SE.STL;
 }
 // Extract Sun True Anomaly (degrees)
-double getSTA(atime_t t){
+double getSTA(time_t t){
 	calcSolar(t, SE);
 	return SE.STA;
 }
 // Extract Sun Radian Vector
-double getSRV(atime_t t){
+double getSRV(time_t t){
 	calcSolar(t, SE);
 	return SE.SRV;
 }
 // Extract Sun Apparent Longitude (degrees)
-double getSAL(atime_t t){
+double getSAL(time_t t){
 	calcSolar(t, SE);
 	return SE.SAL;
 }
 // Extract Mean Oblique Ecliptic (degrees)
-double getMOE(atime_t t){
+double getMOE(time_t t){
 	calcSolar(t, SE);
 	return SE.MOE;
 }
 // Extract Oblique correction (degrees)
-double getOC(atime_t t){
+double getOC(time_t t){
 	calcSolar(t, SE);
 	return SE.MOE;
 }
 // Extract Sun Right Ascension (degrees)
-double getSRA(atime_t t){
+double getSRA(time_t t){
 	calcSolar(t, SE);
 	return SE.SRA;
 }
 // Extract Sun Declination (degrees)
-double getSDec(atime_t t){
+double getSDec(time_t t){
 	calcSolar(t, SE);
 	return SE.SDec;
 }
 // Extract var y
-double getvy(atime_t t){
+double getvy(time_t t){
 	calcSolar(t, SE);
 	return SE.vy;
 }
 // Extract Equation of Time
-double getEOT(atime_t t){
+double getEOT(time_t t){
 	calcSolar(t, SE);
 	return SE.EOT;
 }
 // Extract Hour Angle Sunrise (degrees)
-double getHAS(atime_t t){
+double getHAS(time_t t){
 	calcSolar(t, SE);
 	return SE.HAS;
 }
 // Extract Solar Noon (fraction of a day)
-double getSolarNoonfrac(atime_t t){
+double getSolarNoonfrac(time_t t){
 	calcSolar(t,SE);
 	return SE.SolarNoonfrac;
 }
 // Extract Solar Noon Days (days since 1970-1-1, local time zone)
-double getSolarNoonDays(atime_t t){
+double getSolarNoonDays(time_t t){
 	calcSolar(t, SE);
 	return SE.SolarNoonDays;
 }
 // Extract Solar Noon Time (Time object, seconds since 1970-1-1)
-atime_t getSolarNoonTime(atime_t t){
+time_t getSolarNoonTime(time_t t){
 	calcSolar(t, SE);
 	return SE.SolarNoonTime;
 }
 // Extract Sunrise (seconds since 1970-1-1, local time zone)
-double getSunrise(atime_t t){
+double getSunrise(time_t t){
 	calcSolar(t, SE);
 	return SE.Sunrise;
 }
 // Extract Sunrise as Time object (seconds since 1970-1-1, local time zone)
-atime_t getSunriseTime(atime_t t){
+time_t getSunriseTime(time_t t){
 	calcSolar(t, SE);
 	return SE.SunriseTime;
 }
 // Extract Sunset (seconds since 1970-1-1, local time zone)
-double getSunset(atime_t t){
+double getSunset(time_t t){
 	calcSolar(t, SE);
 	return SE.Sunset;
 }
 // Extract Sunset as Time object (seconds since 1970-1-1, local time zone)
-atime_t getSunsetTime(atime_t t){
+time_t getSunsetTime(time_t t){
 	calcSolar(t, SE);
 	return SE.SunsetTime;
 }
 // Extract Sunlight Duration (day length, minutes)
-double getSunDuration(atime_t t){
+double getSunDuration(time_t t){
 	calcSolar(t, SE);
 	return SE.SunDuration;
 }
 // Extract True Solar Time (minutes)
-double getTST(atime_t t){
+double getTST(time_t t){
 	calcSolar(t, SE);
 	return SE.TST;
 }
 // Extract Hour Angle (degrees)
-double getHA(atime_t t){
+double getHA(time_t t){
 	calcSolar(t, SE);
 	return SE.HA;
 }
 // Extract Solar Zenith Angle (degrees)
-double getSZA(atime_t t){
+double getSZA(time_t t){
 	calcSolar(t, SE);
 	return SE.SZA;
 }
 // Solar Elevation Angle (degrees above horizontal)
-double getSEA(atime_t t){
+double getSEA(time_t t){
 	calcSolar(t, SE);
 	return SE.SEA;
 }
 // Approximate Atmospheric Refraction (degrees)
-double getAAR(atime_t t){
+double getAAR(time_t t){
 	calcSolar(t, SE);
 	return SE.AAR;
 }
 // Solar Elevation Corrected for Atmospheric refraction (degrees)
-double getSEC_Corr(atime_t t){
+double getSEC_Corr(time_t t){
 	calcSolar(t, SE);
 	return SE.SEC_Corr;
 }
 // Extract Solar Azimuth Angle (degrees clockwise from North)
-double getSAA(atime_t t){
+double getSAA(time_t t){
 	calcSolar(t, SE);
 	return SE.SAA;
 }
 
 // Main function to calculate solar values. Requires a time value (seconds since
 // 1970-1-1) as input. 
-void calcSolar(atime_t t, SolarElements &SE){
+void calcSolar(time_t t, SolarElements &SE){
     // Calculate the time past midnight, as a fractional day value
 	// e.g. if it's noon, the result should be 0.5.
 	SE.timeFracDay = ((((double)(second(t)/60) + minute(t))/60) +
