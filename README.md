@@ -48,3 +48,7 @@ lets you specify:
  horribly on 8-bit AVR products such as the Arduino Uno due to limits in precision 
  of double/float values. You can check your results against the NOAA calculator:
  http://www.esrl.noaa.gov/gmd/grad/solcalc/
+ 
+ Thanks to Raoul Smeets for catching a typo in the Approximate Atmospheric Refraction 
+ calculation (SE.AAR in calcSolar() function). 2021-04-19
+

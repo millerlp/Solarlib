@@ -46,6 +46,10 @@
  * 
  * You can check your results against the NOAA calculator:
  * http://www.esrl.noaa.gov/gmd/grad/solcalc/
+ *
+ * Update 2021-04-19: Fixed typo in Approximate Atmospheric Refraction 
+ * calculation (SE.AAR in calcSolar() function). Fix suggested by 
+ * Raoul Smeets, Avans University of Applied Science
 
 */
 #include "Arduino.h"
@@ -378,7 +382,7 @@ void calcSolar(time_t t, SolarElements &SE){
         0.07 / (pow(tan(SE.SEA * DEG_TO_RAD),3)) +
         0.000086 / (pow(tan(SE.SEA * DEG_TO_RAD),5));
     } else if (SE.SEA > -0.575) {
-        SE.AAR = 1735 + SE.SEA * (-581.2 * SE.SEA *
+        SE.AAR = 1735 + SE.SEA * (-581.2 + SE.SEA *
                             (103.4 + SE.SEA * (-12.79 + SE.SEA * 0.711)));
     } else {
         SE.AAR = -20.772 / tan(SE.SEA * DEG_TO_RAD);
